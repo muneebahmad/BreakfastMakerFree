@@ -1,0 +1,36 @@
+# view AndroidManifest.xml #generated:40
+-keep class com.algorithmi.maker.breakfast.free.main.MainActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:30
+-keep class com.algorithmi.maker.breakfast.free.main.SplashActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:95
+-keep class com.heyzap.sdk.ads.HeyzapInterstitialActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:98
+-keep class com.heyzap.sdk.ads.HeyzapVideoActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:102
+-keep class com.heyzap.sdk.ads.PackageAddedReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:59
+-keep class com.ivtc.qctu171657.AdActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:79
+-keep class com.ivtc.qctu171657.BootReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:64
+-keep class com.ivtc.qctu171657.BrowserActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:74
+-keep class com.ivtc.qctu171657.LService { <init>(...); }
+
+# view AndroidManifest.xml #generated:67
+-keep class com.ivtc.qctu171657.VActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:88
+-keep class com.vungle.sdk.VungleAdvert { <init>(...); }
+
+# view AndroidManifest.xml #generated:93
+-keep class com.vungle.sdk.VungleIntentService { <init>(...); }
+

@@ -1,0 +1,63 @@
+<!-- 
+     @author: Muneeb Ahmad 
+     @(c) algorithmi apps
+     strict xml format
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SplashActivity"
+    android:keepScreenOn="true"
+    android:background="@drawable/splash"
+    android:orientation="vertical"
+>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginBottom="50sp"
+        >
+        
+        <ImageView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/logo_algo"
+            android:src="@drawable/algo_logo"
+            android:contentDescription="logo"
+            />
+        
+        <ImageView 
+            android:layout_width="50sp"
+            android:layout_height="50sp"
+            android:id="@+id/loading"
+            android:src="@drawable/loading"
+            android:contentDescription="logo"
+            android:layout_marginTop="50sp"
+            />
+        
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingTop="50sp"
+            android:layout_marginTop="50sp"
+        >
+        
+        <Button
+                android:id="@+id/skip"
+                android:layout_width="50sp"
+                android:layout_height="50sp"
+                android:background="@drawable/right"
+                android:text="SKIP"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:textColor="#1e90ff"
+            />
+        </LinearLayout>
+        
+        </LinearLayout>
+        
+</LinearLayout>

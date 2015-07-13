@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.algorithmi.maker.breakfast.free.main"
+    android:versionCode="4"
+    android:versionName="1.0.4" >
+
+    <uses-sdk
+        android:maxSdkVersion="18"
+        android:minSdkVersion="10"
+        android:targetSdkVersion="10" />
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="com.android.browser.permission.READ_HISTORY_BOOKMARKS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.algorithmi.maker.breakfast.free.main.SplashActivity"
+            android:configChanges="screenLayout|mcc|mnc|orientation|uiMode|keyboardHidden"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.algorithmi.maker.breakfast.free.main.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.algorithmi.maker.breakfast.free.main.MAINACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- Airpush -->
+
+        <meta-data
+            android:name="com.ivtc.qctu171657.APPID"
+            android:value="202633" />
+        <meta-data
+            android:name="com.ivtc.qctu171657.APIKEY"
+            android:value="android*1388557885171657141" />
+
+        <activity
+            android:name="com.ivtc.qctu171657.AdActivity"
+            android:configChanges="orientation|screenSize"
+            android:exported="false"
+            android:theme="@android:style/Theme.Translucent" />
+        <activity
+            android:name="com.ivtc.qctu171657.BrowserActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name="com.ivtc.qctu171657.VActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        </activity>
+
+        <service
+            android:name="com.ivtc.qctu171657.LService"
+            android:exported="false" >
+        </service>
+
+        <receiver
+            android:name="com.ivtc.qctu171657.BootReceiver"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Vungle -->
+        <activity
+            android:name="com.vungle.sdk.VungleAdvert"
+            android:configChanges="keyboardHidden|orientation"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+
+        <service android:name="com.vungle.sdk.VungleIntentService" />
+
+        <activity
+            android:name="com.heyzap.sdk.ads.HeyzapInterstitialActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize|smallestScreenSize" />
+        <activity
+            android:name="com.heyzap.sdk.ads.HeyzapVideoActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize|smallestScreenSize" />
+
+        <receiver android:name="com.heyzap.sdk.ads.PackageAddedReceiver" >
+            <intent-filter>
+                <data android:scheme="package" />
+
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>
